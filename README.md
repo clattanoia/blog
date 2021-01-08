@@ -1,6 +1,8 @@
 # blog
 Interest causes this
 
+[![CircleCI](https://circleci.com/gh/clattanoia/blog.svg?style=svg)](https://app.circleci.com/pipelines/github/clattanoia)
+
 ## Available Scripts
 ### `npm run commit`
 
