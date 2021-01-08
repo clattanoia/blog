@@ -1,0 +1,34 @@
+orbs:
+  node: circleci/node@4.0.0
+
+commands:
+  install-packages:
+    parameters:
+      cache-tag:
+        default: build
+        type: string
+    steps:
+      - node/install-packages:
+          cache-version: <<parameters.cache-tag>>-{{ checksum "package-lock.json" }}
+          include-branch-in-cache-key: false
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+
+version: 2.1
+jobs:
+  tests:
+    executor: node/default
+    steps:
+      - checkout
+      - install-packages:
+          cache-tag: unit-test
+      - run:
+          name: Run Unit Test
+          # Runs jest with "--maxWorkers=2" argument to avoid OOM issues
+          command: npm run test:coverage -- -w=2
+      - store_artifacts:
+          path: coverage
+workflows:
+  development-workflow:
+    jobs:
+      - tests

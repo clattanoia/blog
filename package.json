@@ -23,8 +23,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
     "commit": "git-cz",
     "lint": "./node_modules/.bin/eslint --ext .jsx --ext .js src/ --max-warnings 0",
     "lint:fix": "./node_modules/.bin/eslint --ext .jsx --ext .js src/ --max-warnings 0 --fix"

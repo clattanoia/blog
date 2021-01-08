@@ -8,7 +8,13 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
   ],
   plugins: ['react', 'react-hooks', '@typescript-eslint'],
-  rules: {},
+  rules: {
+    'prettier/prettier': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    // 'no-console': ['error', { allow: ['error'] }],
+    'react/display-name': 0,
+  },
   settings: {
     react: {
       pragma: 'React',
