@@ -9,7 +9,7 @@ commands:
         type: string
     steps:
       - node/install-packages:
-          cache-version: <<parameters.cache-tag>>-{{ checksum "package-lock.json" }}
+          cache-version: <<parameters.cache-tag>>-{{ checksum "yarn.lock" }}
           include-branch-in-cache-key: false
           cache-path: ~/project/node_modules
           override-ci-command: npm install
