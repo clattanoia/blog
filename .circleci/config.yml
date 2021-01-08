@@ -18,7 +18,7 @@ commands:
 version: 2.1
 jobs:
   tests:
-    executor: node/default
+    executor: node/15.5.1
     steps:
       - checkout
       - install-packages:
