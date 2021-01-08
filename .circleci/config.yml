@@ -12,7 +12,8 @@ commands:
           cache-version: <<parameters.cache-tag>>-{{ checksum "yarn.lock" }}
           include-branch-in-cache-key: false
           cache-path: ~/project/node_modules
-          override-ci-command: npm install
+          override-ci-command: yarn
+          pkg-manager: yarn
 
 version: 2.1
 jobs:
