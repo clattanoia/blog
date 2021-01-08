@@ -1,5 +1,5 @@
 orbs:
-  node: circleci/node@4.0.0
+  node: circleci/node@4.1.0
 
 commands:
   install-packages:
@@ -18,7 +18,9 @@ commands:
 version: 2.1
 jobs:
   tests:
-    executor: node/15.5.1
+    executor:
+      name: node/default
+      tag: 15.5.1
     steps:
       - checkout
       - install-packages:
