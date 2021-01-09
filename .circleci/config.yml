@@ -25,8 +25,7 @@ jobs:
       - checkout
       - run:
           name: Install Node Sass
-          # Runs jest with "--maxWorkers=2" argument to avoid OOM issues
-          command: yarn global add node-sass@4.14.1
+          command: yarn config set sass-binary-site https://npm.taobao.org/mirrors/node-sass
       - install-packages:
           cache-tag: unit-test
       - run:
