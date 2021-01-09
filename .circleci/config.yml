@@ -30,7 +30,10 @@ jobs:
       - run:
           name: Run Unit Test
           # Runs jest with "--maxWorkers=2" argument to avoid OOM issues
-          command: npm run test:coverage -- -w=2
+          command: yarn test:coverage -w=2
+      - run:
+          name: Upload Reports
+          command: yarn codecov -t $CODECOV_TOKEN
       - store_artifacts:
           path: coverage
 workflows:

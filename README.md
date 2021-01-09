@@ -2,6 +2,7 @@
 Interest causes this
 
 [![CircleCI](https://circleci.com/gh/clattanoia/blog.svg?style=svg)](https://app.circleci.com/pipelines/github/clattanoia)
+[![codecov](https://codecov.io/gh/clattanoia/blog/branch/master/graph/badge.svg?token=oBGDyqqsXS)](https://codecov.io/gh/clattanoia/blog)
 
 ## Available Scripts
 ### `npm run commit`

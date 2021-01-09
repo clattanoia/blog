@@ -28,7 +28,8 @@
     "test:coverage": "react-scripts test --coverage --watchAll=false",
     "commit": "git-cz",
     "lint": "./node_modules/.bin/eslint --ext .jsx --ext .js src/ --max-warnings 0",
-    "lint:fix": "./node_modules/.bin/eslint --ext .jsx --ext .js src/ --max-warnings 0 --fix"
+    "lint:fix": "./node_modules/.bin/eslint --ext .jsx --ext .js src/ --max-warnings 0 --fix",
+    "codecov": "codecov"
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +54,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@typescript-eslint/eslint-plugin": "^4.12.0",
     "@typescript-eslint/parser": "^4.12.0",
+    "codecov": "^3.8.1",
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.17.0",
