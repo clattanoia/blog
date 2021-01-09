@@ -12,7 +12,7 @@ commands:
           cache-version: <<parameters.cache-tag>>-{{ checksum "yarn.lock" }}
           include-branch-in-cache-key: false
           cache-path: ~/project/node_modules
-          override-ci-command: yarn
+          override-ci-command: yarn install --frozen-lockfile
           pkg-manager: yarn
 
 version: 2.1
