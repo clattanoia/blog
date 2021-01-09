@@ -25,7 +25,7 @@ jobs:
       - checkout
       - run:
           name: Install Node Sass
-          command: yarn config set sass-binary-site https://npm.taobao.org/mirrors/node-sass && yarn add --force node-sass
+          command: yarn add --force node-sass
       - install-packages:
           cache-tag: unit-test
       - run:
