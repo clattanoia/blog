@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from 'react';
-import { getProfile } from './api';
+import { getProfile } from '@/api';
 
 import './App.scss';
 
