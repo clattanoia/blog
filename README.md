@@ -5,7 +5,7 @@ Interest causes this
 [![codecov](https://codecov.io/gh/clattanoia/blog/branch/main/graph/badge.svg?token=U7Epgl4FE6)](https://codecov.io/gh/clattanoia/blog)
 [![license](https://img.shields.io/npm/l/express.svg)](https://opensource.org/licenses/MIT)
 
-[![clattanioa's github stats](https://github-readme-stats.vercel.app/api?username=clattanioa)](https://github.com/anuraghazra/github-readme-stats)
+[![clattanoia's github stats](https://github-readme-stats.vercel.app/api?username=clattanoia)](https://github.com/anuraghazra/github-readme-stats)
 
 
 ## Available Scripts
