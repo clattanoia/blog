@@ -3,6 +3,7 @@ Interest causes this
 
 [![CircleCI](https://circleci.com/gh/clattanoia/blog.svg?style=svg)](https://app.circleci.com/pipelines/github/clattanoia)
 [![codecov](https://codecov.io/gh/clattanoia/blog/branch/main/graph/badge.svg?token=U7Epgl4FE6)](https://codecov.io/gh/clattanoia/blog)
+[![license](https://img.shields.io/npm/l/express.svg)](https://opensource.org/licenses/MIT)
 
 ## Available Scripts
 ### `npm run commit`
