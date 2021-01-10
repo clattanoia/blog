@@ -1,6 +1,6 @@
 import { QueryObject } from '../interfaces';
 
-export const fillPath = (template: string, query: QueryObject) => {
+export const fillPath = (template: string, query: QueryObject = {}): string => {
   const paramRegex = /{(\d+|[a-z$_][a-z\d$_]*?(?:\.[a-z\d$_]*?)*?)}/gi;
 
   return template.replace(paramRegex, (_, key) => {

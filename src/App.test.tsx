@@ -2,7 +2,7 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders wording', () => {
   render(<App />);
   const text = screen.getByText(/hello world/i);
   expect(text.textContent).toEqual('hello world');

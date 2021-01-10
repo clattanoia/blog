@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import axios, { AxiosRequestConfig, AxiosInstance, AxiosPromise } from 'axios';
 
 const initialization = (config: AxiosRequestConfig): AxiosInstance => {

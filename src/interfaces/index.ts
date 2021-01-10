@@ -1,7 +1,3 @@
-export interface QueryObject {
-  [key: string]: any;
-}
-
-export interface ParamsObject {
-  [key: string]: any;
+export interface Model {
+  [key: string]: unknown;
 }
