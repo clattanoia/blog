@@ -1,12 +1,11 @@
 import { Observable } from 'rxjs';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { get, post } from './api';
-import APIS from './constants';
+import { get, post } from './axiosSetup';
+import APIS from './api';
 import { Model } from '../interfaces';
 import { fillPath } from '../utils/path';
 
-// export const getProfile = (query: Model, params: ParamsObject) =>
-//   get<object>(fillPath(APIS.PROFILE, query), params);
+export const getProfile = <T>(query: Model): Observable<T> =>
+  get<T>(fillPath(APIS.GET_PROFILE, query));
 
-export const getProfile = (query: Model): Observable<Model> =>
-  get<Model>(fillPath(APIS.PROFILE, query));
+export const addProfile = <T>(data: Model): Observable<T | void> =>
+  post<T>(APIS.ADD_PROFILE, data);
