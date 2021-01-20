@@ -19,7 +19,7 @@ jobs:
   tests:
     executor:
       name: node/default
-      tag: 15.5.0
+      tag: 15.5.1
     steps:
       - checkout
       - run:
