@@ -3,7 +3,7 @@ import axios, { AxiosRequestConfig, AxiosInstance, AxiosPromise } from 'axios';
 import { defer, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { axiosRequestConfiguration } from '@/config';
-import { Model } from '../interfaces';
+import { BaseObject } from '@/models';
 
 const initializeAxios = (config: AxiosRequestConfig): AxiosInstance => {
   const axiosInstance = axios.create(config);
@@ -25,7 +25,7 @@ const get = <T>(url: string, config?: AxiosRequestConfig): Observable<T> => {
 
 const post = <T>(
   url: string,
-  data: Model,
+  data: BaseObject,
   config?: AxiosRequestConfig
 ): Observable<T | void> => {
   console.log('rx-post');
