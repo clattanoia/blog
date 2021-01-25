@@ -11,6 +11,9 @@
   <a href="https://opensource.org/licenses/MIT" title="License">
     <img src="https://img.shields.io/npm/l/express.svg" alt="License" />
   </a>
+  <a href="https://lgtm.com/projects/g/clattanoia/blog/alerts/">
+    <img alt="Total alerts" src="https://img.shields.io/lgtm/alerts/g/clattanoia/blog.svg?logo=lgtm&logoWidth=18"/>
+  </a>
 </p>
 
 ## Available Scripts
