@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import axios, { AxiosRequestConfig, AxiosInstance, AxiosPromise } from 'axios';
+import axios, { AxiosRequestConfig, AxiosInstance } from 'axios';
 import { defer, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { axiosRequestConfiguration } from '@/config';
@@ -28,7 +27,6 @@ const post = <T>(
   data: BaseObject,
   config?: AxiosRequestConfig
 ): Observable<T | void> => {
-  console.log('rx-post');
   return defer(() => axiosInstance.post<T>(url, data, config)).pipe(
     map(result => result.data)
   );
