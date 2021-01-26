@@ -13,7 +13,11 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     // 'no-console': ['error', { allow: ['error'] }],
-    'react/display-name': 0,
+    'react/jsx-boolean-value': 'error',
+    'react/no-array-index-key': 'error',
+    'react/no-string-refs': 'error',
+    'react/self-closing-comp': 'error',
+    'react/jsx-closing-bracket-location': 'error',
   },
   settings: {
     react: {
